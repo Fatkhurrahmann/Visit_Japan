@@ -1,0 +1,26 @@
+<html>
+
+<body align="center">
+    <h2>pembagian</h2>
+    <input type="number" id="nilai1" placeholder="input angka pertama anda">
+    <br /><br />
+
+    <input type="number" id="nilai2" placeholder="input angka kedua anda">
+    <br /><br />
+
+    <input type="submit" value="proses" onclick="proses()">
+    <button><a href="index.html">Home</a></button>
+    <p id="hasil"></p>
+
+    <script>
+        function proses() {
+            var x = document.getElementById("nilai1").value;
+            var y = document.getElementById("nilai2").value;
+            var z = x / y;
+            document.getElementById("hasil").innerHTML = "hasil pembagian adalah : " + z;
+        }
+    </script>
+    
+</body>
+
+</html>

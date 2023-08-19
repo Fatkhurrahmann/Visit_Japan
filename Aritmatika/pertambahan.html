@@ -1,0 +1,30 @@
+<html>
+
+<body align="center">
+    <h2>Pertambahan</h2>
+    <input type="number" id="nilai1" placeholder="input angka pertama anda">
+    <br /><br />
+
+    <input type="number" id="nilai2" placeholder="input angka kedua anda">
+    <br /><br />
+
+   
+    <button><a href="index.html">Home</a></button>
+    <p id="hasil"></p>
+
+    <script>
+        var angka1 = document.getElementById('nilai1');
+        var angka2 = document.getElementById('nilai2');
+        var hasil = document.getElementById('hasil');
+        nilai1.addEventListener('input',
+          function () {
+                hasil.innerHTML = parseInt(nilai1.value) + parseInt(nilai2.value);
+            });
+        nilai2.addEventListener('input', function () {
+            hasil.innerHTML = parseInt(nilai1.value) + parseInt(nilai2.value);
+        });
+    </script>
+
+</body>
+
+</html>

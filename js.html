@@ -1,0 +1,85 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ 
+<body>
+<div align="center">
+    <h2>Waktu Hari ini</h2>
+    <button type="button" onclick="document.getElementById( 'tanggal').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+    <p id="tanggal"></p>
+</div>
+<div align="center">
+    <h2>Hari ini bulan apa ?</h2>
+    <button onclick="Compare()"> Coba Tekan </button>
+    <p id="Coba"></p>
+    <script>
+        function Compare() {
+            var bulan;
+            switch (new Date().getMonth()) {
+                case 0:
+                    bulan = "Januari";
+                    break;
+                case 1:
+                    bulan = "Febuari";
+                    break;
+                case 2:
+                    bulan = "Maret";
+                    break;
+                case 3:
+                    bulan = "April";
+                    break;
+                case 4:
+                    bulan = "Mei";
+                    break;
+                case 5:
+                    bulan = "Juni";
+                    break;
+                case 6:
+                    bulan = "July";
+                case 7:
+                    bulan = "Agustus";
+                    break;
+                case 8:
+                    bulan = "September";
+                    break;
+                case 9:
+                    bulan = "Oktober";
+                    break;
+                case 10:
+                    bulan = "November";
+                    break;
+                case 11:
+                    bulan = "Desember";
+                    break;
+            }
+            document.getElementById("Coba").innerHTML = "Ini Adalah Bulan " + bulan;
+        }
+
+    </script>
+    
+</div>
+<div align="center">
+<h2>Javascript Perulangan For</h2>
+<button onclick="aca()"> Coba Tekan </button>
+<p id="apa"></p>
+<script>
+    function aca(){
+      const maxIterations = prompt("Masukkan sebuah nomor:");
+    var text = "";
+    var i;
+    for (let i = 1; i <= maxIterations; i++) {
+        text += "Perulangan " + i + "<br>";
+    }
+    document.getElementById("apa").innerHTML = text;
+}
+</script>
+</div>
+<div align="center">
+    <h2>Aritmatika Sederhana</h2>
+    <a href="Aritmatika/index.html" target="_blank" class="btn">Disini</a>
+</div>
+<div align="center">
+    <h2>Back to Homepage</h2>
+<a href="index.html"  class="btn">Disini</a>
+</div>
+</body>
